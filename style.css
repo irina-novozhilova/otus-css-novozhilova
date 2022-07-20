@@ -137,3 +137,25 @@ blockquote {
     font-size: 3.4rem;
     line-height: 1.2;
 }
+
+/* First screen */
+
+.banner {
+    position: relative;
+    text-align: center;
+}
+
+.box-heading {
+    background-color: white;
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    top: 20%;
+    bottom: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
