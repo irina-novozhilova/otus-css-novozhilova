@@ -36,17 +36,16 @@ blockquote {
     color: #636363;
 }
 
-.designers h3, p {
+.designers h3 {
+    font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
     font-weight: 700;
     font-size: 1.6rem;
-}
-
-.designers h3 {
     text-transform: uppercase;
+
 }
 
-.skills {
-    font-weight: 400;
+.designers p {
+    font-size: 1.6rem;
 }
 
 .testimonials a {
