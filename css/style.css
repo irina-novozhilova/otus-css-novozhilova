@@ -1,5 +1,3 @@
-@import url("fonts.css");
-
 :root {
     font-size: 10px;
     line-height: 1.2;
@@ -46,6 +44,10 @@ blockquote {
 
 .designers p {
     font-size: 1.6rem;
+}
+
+.designers .bold {
+    font-weight: bold;
 }
 
 .testimonials a {
