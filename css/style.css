@@ -13,6 +13,7 @@ h1, h3 {
     font-style: normal;
     font-size: 8.7rem;
     line-height: 1.16;
+    font-weight: 300;
 }
 
 h2 {
@@ -25,6 +26,7 @@ blockquote {
     font-family: 'Butler', 'Times', 'Times New Roman', 'Georgia', serif;
     font-style: normal;
     font-size: 3.2rem;
+    font-weight: 200;
 }
 
 .biography p {
@@ -64,4 +66,5 @@ blockquote {
 .strong-points ul {
     font-family: 'Butler', 'Times', 'Times New Roman', 'Georgia', serif;
     font-size: 3.4rem;
+    font-weight: 300;
 }
