@@ -1,6 +1,8 @@
 @font-face {
     font-family: 'Butler';
-    src: url('../fonts/Butler-UltraLight.woff2') format('woff2'),
+    src: local('Butler-UltraLight'),
+    local('Butler UltraLight'),
+    url('../fonts/Butler-UltraLight.woff2') format('woff2'),
     url('../fonts/Butler-UltraLight.woff') format('woff');
     font-weight: 200;
     font-style: normal;
@@ -8,7 +10,9 @@
 
 @font-face {
     font-family: 'Butler';
-    src: url('../fonts/Butler-Medium.woff2') format('woff2'),
+    src: local('Butler-Medium'),
+    local('Butler Medium'),
+    url('../fonts/Butler-Medium.woff2') format('woff2'),
     url('../fonts/Butler-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
@@ -16,7 +20,9 @@
 
 @font-face {
     font-family: 'Butler';
-    src: url('../fonts/Butler-Light.woff2') format('woff2'),
+    src: local('Butler-Light'),
+    local('Butler Light'),
+    url('../fonts/Butler-Light.woff2') format('woff2'),
     url('../fonts/Butler-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
