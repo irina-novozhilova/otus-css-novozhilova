@@ -1,0 +1,67 @@
+:root {
+    font-size: 10px;
+    line-height: 1.2;
+}
+
+body {
+    color: black;
+    font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+}
+
+h1, h3 {
+    font-family: 'Butler', 'Times', 'Times New Roman', 'Georgia', serif;
+    font-size: 8.7rem;
+    line-height: 1.16;
+    font-weight: 300;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+blockquote {
+    font-family: 'Butler', 'Times', 'Times New Roman', 'Georgia', serif;
+    font-size: 3.2rem;
+    font-weight: 200;
+}
+
+.biography p {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.16;
+    color: #636363;
+}
+
+.designers h3 {
+    font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+
+}
+
+.designers p {
+    font-size: 1.6rem;
+}
+
+.designers .bold {
+    font-weight: bold;
+}
+
+.testimonials a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: black;
+}
+
+.testimonials span {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.strong-points ul {
+    font-family: 'Butler', 'Times', 'Times New Roman', 'Georgia', serif;
+    font-size: 3.4rem;
+    font-weight: 300;
+}
