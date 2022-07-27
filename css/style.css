@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     font-size: 10px;
     line-height: 1.2;
@@ -64,4 +70,35 @@ blockquote {
     font-family: 'Butler', 'Times', 'Times New Roman', 'Georgia', serif;
     font-size: 3.4rem;
     font-weight: 300;
+}
+
+/* First screen */
+
+.first-screen {
+    position: relative;
+    text-align: center;
+}
+
+.box-heading {
+    background-color: white;
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    top: 20%;
+    bottom: 20%;
+}
+
+.box-heading h1 {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 40%;
+    bottom: 40%;
+}
+
+.box-heading h2 {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 65%;
 }
