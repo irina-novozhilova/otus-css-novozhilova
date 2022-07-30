@@ -12,6 +12,22 @@
 body {
     color: black;
     font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+    background: white;
+}
+
+main {
+    max-width: 144rem;
+    margin: 0 auto;
+}
+
+section {
+    height: 100vh;
+    min-height: 60rem;
+    max-height: 120rem;
+}
+
+.invisible {
+    display: none;
 }
 
 h1, h3 {
@@ -82,23 +98,33 @@ blockquote {
 .box-heading {
     background-color: white;
     position: absolute;
-    left: 30%;
-    right: 30%;
-    top: 20%;
-    bottom: 20%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    font-size: 8.7rem;
+    padding: 1.5em 0.8em;
+    white-space: nowrap;
 }
 
 .box-heading h1 {
-    position: absolute;
-    left: 10%;
-    right: 10%;
-    top: 40%;
-    bottom: 40%;
+    font-size: 1em;
 }
 
 .box-heading h2 {
+    font-size: 0.2em;
+    margin-bottom: -1.7em;
+    margin-top: 0.5em;
+}
+
+.first-screen img {
     position: absolute;
-    left: 10%;
-    right: 10%;
-    top: 65%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    max-width: 1065px;
+    object-fit: cover;
 }
