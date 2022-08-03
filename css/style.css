@@ -128,5 +128,69 @@ blockquote {
     max-height: 100%;
     max-width: 1065px;
     object-fit: cover;
+}
 
+/* Biography */
+
+.biography {
+    max-width: 144rem;
+    margin: auto;
+    font-size: 8.7rem;
+}
+
+.biography::after {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    content: "";
+}
+
+.biography-box {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 1.5em;
+    margin: auto;
+}
+
+.biography img {
+    display: inline-block;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+    margin-right: calc(1.7em - 1.6rem);
+}
+
+.about {
+    font-size: 8.7rem;
+    max-width: 5.1em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.about h3 {
+    margin-bottom: 0.5em;
+}
+
+
+.about .skills {
+    font-size: 0.2em;
+    margin-bottom: 4em;
+}
+
+.about blockquote::before {
+    content: " ";
+    display: block;
+    width: 14px;
+    height: 4px;
+    background: black;
+    margin-bottom: 1em;
+}
+
+.biography h2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: rotate(-90deg) translateX(50%);
 }
