@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     font-size: 10px;
     line-height: 1.2;
@@ -6,6 +12,22 @@
 body {
     color: black;
     font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+    background: white;
+}
+
+main {
+    max-width: 144rem;
+    margin: 0 auto;
+}
+
+section {
+    height: 100vh;
+    min-height: 60rem;
+    max-height: 120rem;
+}
+
+.invisible {
+    display: none;
 }
 
 h1, h3 {
@@ -64,4 +86,47 @@ blockquote {
     font-family: 'Butler', 'Times', 'Times New Roman', 'Georgia', serif;
     font-size: 3.4rem;
     font-weight: 300;
+}
+
+/* First screen */
+
+.first-screen {
+    position: relative;
+    text-align: center;
+}
+
+.box-heading {
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    font-size: 8.7rem;
+    padding: 1.5em 0.8em;
+    white-space: nowrap;
+}
+
+.box-heading h1 {
+    font-size: 1em;
+}
+
+.box-heading h2 {
+    font-size: 0.2em;
+    margin-bottom: -1.7em;
+    margin-top: 0.5em;
+}
+
+.first-screen img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    max-height: 100%;
+    max-width: 1065px;
+    object-fit: cover;
+
 }
