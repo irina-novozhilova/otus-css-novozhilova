@@ -153,20 +153,27 @@ blockquote {
     margin: auto;
 }
 
+.biography-photo, .about {
+    width: 50%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.biography-photo {
+    padding-right: 5%;
+}
+
 .biography img {
     display: inline-block;
     height: 100%;
     max-width: 100%;
     object-fit: cover;
-    vertical-align: middle;
-    margin-right: calc(1.7em - 1.6rem);
 }
 
 .about {
     font-size: 8.7rem;
-    max-width: 5.1em;
-    display: inline-block;
-    vertical-align: middle;
+    padding-left: 5%;
+
 }
 
 .about h3 {
@@ -177,6 +184,11 @@ blockquote {
 .about .skills {
     font-size: 0.2em;
     margin-bottom: 4em;
+}
+
+.about blockquote {
+    font-size: 3.2rem;
+    max-width: 13em;
 }
 
 .about blockquote::before {
