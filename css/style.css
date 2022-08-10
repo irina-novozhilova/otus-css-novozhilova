@@ -248,6 +248,8 @@ blockquote {
 .cards-heading {
     width: 100%;
     position: relative;
+    display: flex;
+    gap: 2.4rem;
 }
 
 .cards-nowrap {
@@ -255,10 +257,16 @@ blockquote {
     gap: 2.4rem;
 }
 
+.cards-heading-box {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
 .designers h2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    transform: rotate(-90deg) translate(50%);
+    transform: rotate(-90deg) translate(30%, 130%);
+}
+
+.help-heading {
+    width: 50%;
 }
