@@ -206,3 +206,59 @@ blockquote {
     right: 0;
     transform: rotate(-90deg) translateX(50%);
 }
+
+
+/* Designers */
+
+.designers {
+    display: flex;
+    align-items: center;
+    padding-right: 7.4rem;
+}
+
+.designers img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 2.4rem;
+    object-fit: cover;
+}
+
+.cards {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: space-between;
+    gap: 11rem;
+
+}
+
+.cards-right {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    gap: 2.4rem;
+    justify-content: center
+}
+
+.description-right {
+    margin-left: 30%;
+}
+
+.cards-heading {
+    width: 100%;
+    position: relative;
+}
+
+.cards-nowrap {
+    display: flex;
+    gap: 2.4rem;
+}
+
+.designers h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: rotate(-90deg) translate(50%);
+}
