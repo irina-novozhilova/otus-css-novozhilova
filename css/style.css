@@ -308,6 +308,7 @@ blockquote {
 .blockquote-box {
     display: flex;
     text-align: center;
+    justify-content: center;
 }
 
 .blockquote-center {
