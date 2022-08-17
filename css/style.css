@@ -274,49 +274,53 @@ blockquote {
 /* Testimonials */
 
 .testimonials {
-    display: grid;
+    display: flex;
     align-items: center;
-    justify-content: start;
-
-
+    justify-content: flex-start;
 }
 
 .testimonials-box {
     display: grid;
-    grid-template-columns: 12rem 1fr 1.45fr;
-    justify-items: center;
+    grid-template-columns: 10% auto 50%;
+    grid-template-rows: auto auto;
+    width: 100%;
+}
 
+.testimonials-heading {
+    grid-column: span 2;
+    padding-bottom: 3rem;
 }
 
 .testimonials-links {
-    display: grid;
-    align-items: center;
+    display: flex;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    align-items: flex-end;
+    justify-content: space-around;
 
 }
 
 .testimonials-links a {
-    transform: rotate(-90deg) translateX(-20%);
-    padding-top: 4rem;
-
+    padding-left: 3%;
 }
 
 .blockquote-box {
-    width: 24rem;
-    padding-top: 5rem;
+    display: flex;
     text-align: center;
+}
+
+.blockquote-center {
+    width: 30%;
+    min-width: 21rem;
+    justify-self: center;
+    justify-content: center;
 }
 
 .blockquote-box blockquote {
     margin-bottom: 3rem;
 }
 
-.photo-box {
-    justify-self: center;
-}
-
-.photo-box h2 {
-    margin-bottom: 3rem;
-}
 
 .photo-box img {
     /*width: 100%;
