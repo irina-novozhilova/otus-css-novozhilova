@@ -228,18 +228,26 @@ blockquote {
     display: flex;
     align-items: baseline;
     justify-content: flex-start;
-    gap: 1.5%;
+    gap: 1.8%;
+    width: 100%;
+    margin-top: -130px;
+    /*overflow-x: scroll;*/
 }
 
+/*.cards::-webkit-scrollbar {
+    width: 0;
+}*/
+
 .card-designer {
-    width: 30rem;
+    width: 31rem;
     height: 44rem;
+    /*flex-shrink: 0;*/
 }
 
 .cards-big {
     width: 60rem;
     height: 54rem;
-    margin-right: 7%;
+    margin-right: 6%;
 }
 
 .cards-big img {
@@ -251,14 +259,15 @@ blockquote {
     min-width: 30rem;
 }
 
-.cards-big h3, .cards-big p {
-    padding-left: 30% ;
+.cards-big .description {
+    padding-left: 28% ;
 }
 
 .designers h2 {
     position: absolute;
-    top: 170px;
-    left: 890px;
+    top: 50%;
+    left: 1003px;
+    margin-top: -340px;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg);
