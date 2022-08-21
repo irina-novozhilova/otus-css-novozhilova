@@ -180,7 +180,6 @@ blockquote {
     margin-bottom: 0.5em;
 }
 
-
 .about .skills {
     font-size: 0.2em;
     margin-bottom: 4em;
@@ -205,4 +204,65 @@ blockquote {
     bottom: 0;
     right: 0;
     transform: rotate(-90deg) translateX(50%);
+}
+
+/* Strong points */
+
+.strong-points {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100%;
+
+}
+
+.strong-points-box {
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    gap: 28px;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.strong-points-box::-webkit-scrollbar {
+    width: 0;
+}
+
+.strong-points h2 {
+    position: absolute;
+    top: 50%;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    margin-top: -400px;
+    left: 470px;
+}
+
+.strong-points-item {
+    width: 35rem;
+    flex-shrink: 0;
+}
+
+.list {
+    list-style-type: none;
+    padding-left: 7rem ;
+}
+
+.item-big {
+    margin-left: 67px;
+    margin-right: 67px;
+    width: 410px;
+}
+
+.strong-points-box .strong-points-item:first-child {
+    margin-left: 0;
+}
+
+.strong-points-box .strong-points-item:last-child {
+    margin-right: 0;
+}
+
+.strong-points h3 {
+    margin-bottom: 60px;
 }
