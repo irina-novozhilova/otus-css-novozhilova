@@ -208,22 +208,24 @@ blockquote {
 
 /* Strong points */
 
-.strong-points {
-    display: flex;
-    position: relative;
-    align-items: center;
-    width: 100%;
+/*float*/
 
+.strong-points-item {
+    float: left;
+    margin-right: 28px;
+    display: block;
+    margin-top: 150px;
 }
 
 .strong-points-box {
-    display: flex;
-    position: relative;
-    align-items: flex-end;
-    gap: 28px;
-    overflow-x: auto;
-    width: 100%;
+    display: block;
 }
+
+.item-big {
+    margin-top: 0;
+}
+
+
 
 .strong-points-box::-webkit-scrollbar {
     width: 0;
@@ -266,3 +268,26 @@ blockquote {
 .strong-points h3 {
     margin-bottom: 60px;
 }
+
+@supports (display: flex) {
+
+
+    .strong-points {
+        display: flex;
+        position: relative;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .strong-points-box {
+        display: flex;
+        position: relative;
+        align-items: flex-end;
+        gap: 28px;
+        overflow-x: auto;
+        width: 100%;
+    }
+
+}
+
