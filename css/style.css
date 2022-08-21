@@ -241,7 +241,7 @@ blockquote {
 .card-designer {
     width: 31rem;
     height: 44rem;
-    /*flex-shrink: 0;*/
+    flex-shrink: 0;
 }
 
 .cards-big {
