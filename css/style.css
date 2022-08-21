@@ -248,6 +248,15 @@ blockquote {
     width: 60rem;
     height: 54rem;
     margin-right: 6%;
+    margin-left: 6%;
+}
+
+.cards article:first-child {
+    margin-left: 0;
+}
+
+.cards article:last-child {
+    margin-right: 0;
 }
 
 .cards-big img {
