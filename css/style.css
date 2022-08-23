@@ -180,6 +180,7 @@ blockquote {
     margin-bottom: 0.5em;
 }
 
+
 .about .skills {
     font-size: 0.2em;
     margin-bottom: 4em;
@@ -205,6 +206,83 @@ blockquote {
     right: 0;
     transform: rotate(-90deg) translateX(50%);
 }
+
+
+/* Designers */
+
+.designers {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.designers img {
+    margin-bottom: 2.4rem;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cards {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: 1.8%;
+    width: 100%;
+    margin-top: -130px;
+    /*overflow-x: scroll;*/
+}
+
+/*.cards::-webkit-scrollbar {
+    width: 0;
+}*/
+
+.card-designer {
+    width: 31rem;
+    height: 44rem;
+    flex-shrink: 0;
+}
+
+.cards-big {
+    width: 60rem;
+    height: 54rem;
+    margin-right: 6%;
+    margin-left: 6%;
+}
+
+.cards article:first-child {
+    margin-left: 0;
+}
+
+.cards article:last-child {
+    margin-right: 0;
+}
+
+.cards-big img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    margin-bottom: 2.4rem;
+    object-fit: cover;
+    min-width: 30rem;
+}
+
+.cards-big .description {
+    padding-left: 28% ;
+}
+
+.designers h2 {
+    position: absolute;
+    top: 50%;
+    left: 1003px;
+    margin-top: -340px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+}
+
+
 
 /* Strong points */
 
