@@ -288,17 +288,21 @@ blockquote {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    min-height: 70rem;
 }
 
 .testimonials-box {
     display: grid;
     grid-template-columns: 12% auto 50%;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto 96%;
     width: 100%;
 }
 
 .testimonials-heading {
     grid-column: 2/span 2;
+}
+
+.testimonials h2 {
     padding-bottom: 3rem;
 }
 
@@ -309,7 +313,6 @@ blockquote {
     transform: rotate(180deg);
     align-items: flex-end;
     justify-content: space-around;
-
 }
 
 .testimonials-links a {
@@ -335,8 +338,5 @@ blockquote {
 
 
 .photo-box img {
-    /*width: 100%;
-    max-width: 100%;
     max-height: 100%;
-    object-fit: cover;*/
 }
