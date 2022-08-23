@@ -24,6 +24,7 @@ section {
     height: 100vh;
     min-height: 60rem;
     max-height: 120rem;
+    position: relative;
 }
 
 .invisible {
@@ -288,6 +289,11 @@ blockquote {
 
 /*float*/
 
+
+.strong-points {
+    overflow-x: auto;
+
+}
 .strong-points-item {
     float: left;
     margin-right: 28px;
@@ -297,13 +303,17 @@ blockquote {
 
 .strong-points-box {
     display: block;
+    width: 1700px;
+
+}
+
+.clear {
+    clear: both;
 }
 
 .item-big {
     margin-top: 0;
 }
-
-
 
 .strong-points-box::-webkit-scrollbar {
     width: 0;
@@ -315,8 +325,9 @@ blockquote {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg);
-    margin-top: -400px;
+    margin-top: -340px;
     left: 470px;
+    z-index: 10;
 }
 
 .strong-points-item {
@@ -349,7 +360,6 @@ blockquote {
 
 @supports (display: flex) {
 
-
     .strong-points {
         display: flex;
         position: relative;
@@ -363,7 +373,7 @@ blockquote {
         position: relative;
         align-items: flex-end;
         gap: 28px;
-        overflow-x: auto;
+        /*overflow-x: auto;*/
         width: 100%;
     }
 
