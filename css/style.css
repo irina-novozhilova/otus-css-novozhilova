@@ -24,7 +24,7 @@ section {
     height: 100vh;
     min-height: 60rem;
     max-height: 120rem;
-    position: relative;
+
 }
 
 .invisible {
@@ -150,8 +150,11 @@ blockquote {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    padding: 0 1.5em;
+    /*padding: 0 1.5em;*/
+    padding-right: 0.5em;
+    padding-left: 1.5em;
     margin: auto;
+    width: 100%;
 }
 
 .biography-photo, .about {
@@ -161,7 +164,7 @@ blockquote {
 }
 
 .biography-photo {
-    padding-right: 5%;
+    /*padding-right: 5%;*/
 }
 
 .biography img {
@@ -232,6 +235,7 @@ blockquote {
     gap: 1.8%;
     width: 100%;
     margin-top: -130px;
+    /*overflow-x: auto;*/
     /*overflow-x: scroll;*/
 }
 
@@ -242,7 +246,7 @@ blockquote {
 .card-designer {
     width: 31rem;
     height: 44rem;
-    flex-shrink: 0;
+    /*flex-shrink: 0;*/
 }
 
 .cards-big {
@@ -276,11 +280,11 @@ blockquote {
 .designers h2 {
     position: absolute;
     top: 50%;
-    left: 1003px;
+    left: 50%;
     margin-top: -340px;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    transform: rotate(180deg);
+    transform: rotate(180deg) translateX(-240px);
 }
 
 /* Testimonials */
@@ -330,6 +334,7 @@ blockquote {
 
 .photo-box img {
     height: 100%;
+    max-width: 100%;
 }
 
 /* Strong points */
@@ -338,6 +343,7 @@ blockquote {
 
 .strong-points {
     overflow-x: auto;
+    position: relative;
 }
 
 .strong-points-box {
