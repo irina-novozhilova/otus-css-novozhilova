@@ -283,7 +283,54 @@ blockquote {
     transform: rotate(180deg);
 }
 
+/* Testimonials */
 
+.testimonials {
+    min-height: 76rem;
+    display: grid;
+    grid-template-columns: 12% auto 50%;
+    grid-template-rows: auto 84%;
+}
+
+.testimonials-heading {
+    grid-column: 2/span 2;
+    align-self: center;
+    padding-top: 2em;
+}
+
+.testimonials-links {
+    display: flex;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.testimonials-links a {
+    padding-left: 5%;
+}
+
+.blockquote-box {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.blockquote-center {
+    width: 30%;
+    min-width: 21rem;
+    justify-self: center;
+    justify-content: center;
+}
+
+.blockquote-box blockquote {
+    margin-bottom: 3rem;
+}
+
+.photo-box img {
+    height: 100%;
+}
 
 /* Strong points */
 
