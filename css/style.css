@@ -530,4 +530,10 @@ blockquote {
     }
 
 
+    /* Testimonials */
+
+    .testimonials {
+        margin-bottom: 15rem;
+    }
+
 }
