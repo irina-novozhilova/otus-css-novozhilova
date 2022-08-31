@@ -133,3 +133,36 @@
 .blockquote-center blockquote {
     margin-bottom: 8rem;
 }
+
+
+/* Strong points */
+
+.strong-points h2 {
+    position: absolute;
+    top: 0;
+    right: 4rem;
+    left: auto;
+    writing-mode: horizontal-tb;
+    transform: rotate(0);
+    margin: 0;
+}
+
+.strong-points .item-big {
+    order: -1;
+    margin-left: 3rem;
+    width: auto;
+}
+
+.strong-points-box {
+    margin-top: 6rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+.strong-points .list {
+    padding-left: 0;
+}
+
+.strong-points h3 {
+    margin-bottom: 4rem;
+}
