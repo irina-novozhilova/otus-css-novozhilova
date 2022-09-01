@@ -1,6 +1,53 @@
+.mobile-menu{
+    font-weight: 500;
+    font-size: 4rem;
+    font-family: 'Butler', 'Times', 'Times New Roman', 'Georgia', serif;
+    display: flex;
+    border-top: 1px solid #000000;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+    background: white;
+    padding-top: 2.6rem;
+    padding-bottom: 2.6rem;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: black;
+    width: 25%;
+    text-align: center;
+}
+
+.mobile-menu a:active {
+    text-decoration: underline;
+}
+
 /* First screen */
 
-.first-screen {
+
+.first-screen-mobile{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box-heading-mobile {
+    position: relative;
+    padding: 10% 0;
+    transform: translate(0, 0);
+    order: -1;
+    margin-top: 16rem;
+    top: auto;
+    left: auto;
+}
+
+.first-screen-img {
+    position: relative;
+}
+
+/*.first-screen {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -14,9 +61,9 @@
     margin-top: 16rem;
 }
 
-.first-screen img {
+.first-screen-img {
     position: relative;
-}
+}*/
 
 /* Biography */
 
@@ -81,6 +128,25 @@
     width: 100%;
     margin-top: -24px;
 }
+
+
+/* Designers */
+
+.cards-big {
+    width: 31rem;
+    height: 44rem;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.cards-big .description {
+    padding-left: 0;
+}
+
+.cards {
+    gap: 1rem;
+}
+
 
 
 /* Testimonials */

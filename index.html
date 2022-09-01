@@ -13,19 +13,28 @@
 </head>
 <body>
 <main>
-    <nav class="invisible">
-        <a href="#biography">Biography</a>
-        <a href="#designers">Designers</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#strong-points">Strong points</a>
+    <nav>
+        <a href="#" class="menu"><img src="./images/burger-menu.svg"></a>
+        <div class="links">
+            <a href="#biography">Biography</a>
+            <a href="#designers">Designers</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#strong-points">Strong points</a>
+        </div>
+        <div class="mobile-menu">
+            <a href="#biography">B</a>
+            <a href="#designers">D</a>
+            <a href="#testimonials">T</a>
+            <a href="#strong-points">S</a>
+        </div>
     </nav>
-    <section class="first-screen">
+    <section class="first-screen first-screen-mobile">
         <!--<img src="./images/banner.png" alt="Mod Studio">-->
         <picture>
             <source srcset="./images/banner-small.png" media="(max-width: 480px)">
-            <img src="./images/banner.png" alt="Mod Studio">
+            <img class="first-screen-img" src="./images/banner.png" alt="Mod Studio">
         </picture>
-        <div class="box-heading">
+        <div class="box-heading box-heading-mobile">
             <h1>Mod Studio</h1>
             <h2>Modern Web Studio</h2>
         </div>

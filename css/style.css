@@ -89,6 +89,28 @@ blockquote {
     font-weight: 300;
 }
 
+.menu {
+    display: block;
+    height: 1.6rem;
+    width: 3.2rem;
+    margin: 5.5rem auto 0 auto;
+    /*pointer-events: none;*/
+    cursor: pointer;
+}
+
+.menu:focus, menu:hover {
+
+}
+
+
+.links {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
 /* First screen */
 
 .first-screen {
@@ -118,7 +140,7 @@ blockquote {
     margin-top: 0.5em;
 }
 
-.first-screen img {
+.first-screen-img {
     position: absolute;
     top: 0;
     bottom: 0;
