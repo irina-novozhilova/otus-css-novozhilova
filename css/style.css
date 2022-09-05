@@ -103,13 +103,11 @@ blockquote {
 }
 
 
-.links {
+nav a {
     display: none;
 }
 
-.mobile-menu {
-    display: none;
-}
+
 
 /* First screen */
 
@@ -267,15 +265,24 @@ blockquote {
 
 .card-designer {
     width: 31rem;
-    height: 44rem;
+    /*height: 44rem;*/
     /*flex-shrink: 0;*/
 }
 
+.card-designer img {
+    height: 44rem;
+}
+
+
 .cards-big {
     width: 60rem;
-    height: 54rem;
+    /*height: 54rem;*/
     margin-right: 6%;
     margin-left: 6%;
+}
+
+.cards-big img {
+    height: 54rem;
 }
 
 .cards article:first-child {
@@ -303,7 +310,7 @@ blockquote {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -340px;
+    margin-top: -430px;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg) translateX(-240px);
@@ -365,7 +372,6 @@ blockquote {
 /*float*/
 
 .strong-points {
-    overflow-x: auto;
     position: relative;
 }
 
@@ -375,6 +381,7 @@ blockquote {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    overflow-x: auto;
 }
 
 .strong-points-item {
@@ -526,13 +533,16 @@ blockquote {
     /* Designers */
 
     .designers {
-        overflow-x: auto;
-        padding-top: 170px;
+        padding-top: 190px;
         padding-bottom: 150px;
 
     }
 
-    .designers::-webkit-scrollbar {
+    .cards {
+        overflow-x: auto;
+    }
+
+    .cards::-webkit-scrollbar {
         width: 0;
     }
 
