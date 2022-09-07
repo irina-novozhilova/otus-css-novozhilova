@@ -238,6 +238,7 @@ nav a {
     display: flex;
     position: relative;
     align-items: center;
+    min-height: 850px;
 }
 
 .designers img {
@@ -289,16 +290,21 @@ nav a {
     min-width: 30rem;
 }
 
+.card-designer.description {
+    transition: all 1s;
+}
+
 .card-designer:hover .description {
     padding-left: 28% ;
 }
 
+.card-designer:first-child:hover  {
+    margin-left: 0;
+}
 
-
-
-
-
-
+.card-designer:last-child:hover  {
+    margin-right: 0;
+}
 
 
 /*.cards-big {
@@ -335,12 +341,12 @@ nav a {
 
 .designers h2 {
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 50%;
-    margin-top: -430px;
-    writing-mode: vertical-rl;
+    /*margin-top: -430px;*/
+    /*writing-mode: vertical-rl;
     text-orientation: mixed;
-    transform: rotate(180deg) translateX(-240px);
+    transform: rotate(180deg) translateX(-240px);*/
 }
 
 /* Testimonials */
