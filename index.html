@@ -2,24 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mod Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:480px)" href="./css/mobile.css" />
 </head>
 <body>
 <main>
-    <nav class="invisible">
-        <a href="#biography">Biography</a>
-        <a href="#designers">Designers</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#strong-points">Strong points</a>
+    <nav class="mobile-menu">
+        <div class="menu"><img src="./images/burger-menu.svg"></div>
+            <a href="#biography">Biography</a>
+            <a href="#designers">Designers</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#strong-points">Strong points</a>
     </nav>
-    <section class="first-screen">
-        <img src="./images/banner.png" alt="Mod Studio">
-        <div class="box-heading">
+    <section class="first-screen first-screen-mobile">
+        <picture>
+            <source srcset="./images/banner-small.png" media="(max-width: 480px)">
+            <img class="first-screen-img" src="./images/banner.png" alt="Mod Studio">
+        </picture>
+        <div class="box-heading box-heading-mobile">
             <h1>Mod Studio</h1>
             <h2>Modern Web Studio</h2>
         </div>
@@ -27,9 +33,12 @@
     <section class="biography" id="biography">
         <div class="biography-box">
             <h2>Biography</h2>
-            <span class="biography-photo"><img src="./images/katya-mills.png" alt="Katya Mills"></span><span
+            <span class="biography-photo"><picture>
+            <source srcset="./images/katya-mills-small.png" media="(max-width: 480px)">
+            <img src="./images/katya-mills.png" alt="Katya Mills">
+        </picture><!--<img src="./images/katya-mills.png" alt="Katya Mills">--></span><span
                 class="about">
-                <h3> Katya<br>Mills</h3>
+                <h3> Katya <br>Mills</h3>
                 <p>Art Director</p>
                 <p class="skills">Scenography / Styling / Creative Photography / Design</p>
                 <blockquote>

@@ -89,6 +89,26 @@ blockquote {
     font-weight: 300;
 }
 
+.menu {
+    display: block;
+    height: 1.6rem;
+    width: 3.2rem;
+    margin: 5.5rem auto 0 auto;
+    /*pointer-events: none;*/
+    cursor: pointer;
+}
+
+.menu:focus, menu:hover {
+
+}
+
+
+nav a {
+    display: none;
+}
+
+
+
 /* First screen */
 
 .first-screen {
@@ -118,7 +138,7 @@ blockquote {
     margin-top: 0.5em;
 }
 
-.first-screen img {
+.first-screen-img {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -245,15 +265,24 @@ blockquote {
 
 .card-designer {
     width: 31rem;
-    height: 44rem;
+    /*height: 44rem;*/
     /*flex-shrink: 0;*/
 }
 
+.card-designer img {
+    height: 44rem;
+}
+
+
 .cards-big {
     width: 60rem;
-    height: 54rem;
+    /*height: 54rem;*/
     margin-right: 6%;
     margin-left: 6%;
+}
+
+.cards-big img {
+    height: 54rem;
 }
 
 .cards article:first-child {
@@ -281,7 +310,7 @@ blockquote {
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -340px;
+    margin-top: -430px;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg) translateX(-240px);
@@ -335,6 +364,7 @@ blockquote {
 .photo-box img {
     height: 100%;
     max-width: 100%;
+    object-fit: cover;
 }
 
 /* Strong points */
@@ -342,7 +372,6 @@ blockquote {
 /*float*/
 
 .strong-points {
-    overflow-x: auto;
     position: relative;
 }
 
@@ -352,6 +381,7 @@ blockquote {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    overflow-x: auto;
 }
 
 .strong-points-item {
@@ -451,3 +481,91 @@ blockquote {
 
 }
 
+@media (max-width: 768px ) {
+
+    section {
+        height: auto;
+    }
+
+
+    /* First screen */
+
+
+    .box-heading {
+        padding: 15% 10%;
+    }
+
+    .box-heading h1 {
+        font-size: 7rem;
+    }
+
+    /* Biography */
+
+    .biography {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .biography-box {
+        display: flex;
+        padding-left: 10rem;
+        padding-right: 1rem;
+    }
+
+    .biography h3{
+        font-size: 7.8rem;
+        margin-bottom: 0;
+    }
+
+    .about .skills {
+        margin-bottom: 1.5em;
+    }
+
+    .about {
+        padding-left: 3%;
+    }
+
+    .biography h2 {
+        right: -20px;
+    }
+
+
+    /* Designers */
+
+    .designers {
+        padding-top: 190px;
+        padding-bottom: 150px;
+
+    }
+
+    .cards {
+        overflow-x: auto;
+    }
+
+    .cards::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .card-designer {
+        flex-shrink: 0;
+    }
+
+    .designers h2 {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        left: auto;
+        margin: 0;
+        writing-mode: horizontal-tb;
+        text-orientation: mixed;
+        transform: rotate(0) translateX(0);
+    }
+
+
+    /* Testimonials */
+
+    .testimonials {
+        margin-bottom: 15rem;
+    }
+
+}
