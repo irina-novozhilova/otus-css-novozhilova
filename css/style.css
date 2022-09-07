@@ -265,6 +265,7 @@ nav a {
 
 .card-designer {
     width: 31rem;
+    transition: all 1s;
     /*height: 44rem;*/
     /*flex-shrink: 0;*/
 }
@@ -273,10 +274,36 @@ nav a {
     height: 44rem;
 }
 
-
-.cards-big {
+.card-designer:hover {
     width: 60rem;
-    /*height: 54rem;*/
+    margin-right: 6%;
+    margin-left: 6%;
+}
+
+.card-designer:hover img {
+    height: 54rem;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 2.4rem;
+    object-fit: cover;
+    min-width: 30rem;
+}
+
+.card-designer:hover .description {
+    padding-left: 28% ;
+}
+
+
+
+
+
+
+
+
+
+/*.cards-big {
+    width: 60rem;
+    !*height: 54rem;*!
     margin-right: 6%;
     margin-left: 6%;
 }
@@ -304,7 +331,7 @@ nav a {
 
 .cards-big .description {
     padding-left: 28% ;
-}
+}*/
 
 .designers h2 {
     position: absolute;
