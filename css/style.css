@@ -157,6 +157,7 @@ nav a {
     max-width: 144rem;
     margin: auto;
     font-size: 8.7rem;
+    min-height: 68rem;
 }
 
 .biography::after {
@@ -238,7 +239,7 @@ nav a {
     display: flex;
     position: relative;
     align-items: center;
-    min-height: 850px;
+    min-height: 88rem;
 }
 
 .designers img {
@@ -267,18 +268,21 @@ nav a {
 .card-designer {
     width: 31rem;
     transition: all 1s;
+    padding-top: 10rem;
     /*height: 44rem;*/
     /*flex-shrink: 0;*/
 }
 
 .card-designer img {
     height: 44rem;
+    transition: all 1s;
 }
 
 .card-designer:hover {
     width: 60rem;
     margin-right: 6%;
     margin-left: 6%;
+    padding-top: 0;
 }
 
 .card-designer:hover img {
@@ -290,7 +294,7 @@ nav a {
     min-width: 30rem;
 }
 
-.card-designer.description {
+.card-designer .description {
     transition: all 1s;
 }
 
@@ -343,6 +347,7 @@ nav a {
     position: absolute;
     top: 0;
     left: 50%;
+    margin-top: 3rem;
     /*margin-top: -430px;*/
     /*writing-mode: vertical-rl;
     text-orientation: mixed;
