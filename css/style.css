@@ -134,3 +134,12 @@ blockquote {
     object-fit: cover;
 
 }
+
+.biography blockquote::before {
+    content: " ";
+    display: block;
+    width: 14px;
+    height: 4px;
+    background: black;
+    margin-bottom: 1em;
+}
