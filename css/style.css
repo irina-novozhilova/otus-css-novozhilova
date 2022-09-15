@@ -88,6 +88,10 @@ blockquote {
     font-weight: 300;
 }
 
+.invisible {
+    display: none;
+}
+
 /* First screen */
 
 .first-screen {
