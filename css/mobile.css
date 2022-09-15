@@ -3,7 +3,7 @@ main {
 }
 
 .section {
-   min-height: 100vh;
+    min-height: 100vh;
 
 }
 
@@ -15,7 +15,7 @@ nav a {
     display: none;
 }
 
-.mobile-menu{
+.mobile-menu {
     font-weight: 500;
     font-size: 4rem;
     font-family: 'Butler', 'Times', 'Times New Roman', 'Georgia', serif;
@@ -49,7 +49,7 @@ nav a {
 /* First screen */
 
 
-.first-screen_first-screen-mobile{
+.first-screen_first-screen-mobile {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -171,7 +171,6 @@ nav a {
 }
 
 
-
 /* Testimonials */
 
 .testimonials__section {
@@ -212,7 +211,7 @@ nav a {
 
 }
 
-.testimonials__blockquote-center img{
+.testimonials__blockquote-center img {
     max-width: 38rem;
     width: 80%;
     height: 33rem;
@@ -220,6 +219,7 @@ nav a {
     margin-bottom: 5rem;
 
 }
+
 .testimonials__blockquote-center blockquote {
     margin-bottom: 8rem;
     margin-left: 1rem;
