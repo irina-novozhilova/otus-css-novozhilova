@@ -27,11 +27,15 @@
         </div>
     </section>
     <section class="biography container-fluid" id="biography">
-        <h2 class="invisible">Biography</h2>
+        <h2 class="position-absolute">Biography</h2>
         <div class="row d-flex align-items-center">
-            <div class="col-xl-6 col-lg-5 col-md-6 d-flex justify-content-center ">
-                <img class="img-fluid" src="./images/katya-mills.png" alt="Katya Mills"></div>
-            <div class="col-xl-5 offset-lg-1 col-lg-6 col-md-6 ps-lg-0 ps-4 order-first order-md-last d-flex flex-column">
+            <div class="col-xl-6 col-lg-5 col-md-6 col-sm-12 d-flex justify-content-center ">
+                <picture class="img-fluid">
+                    <source srcset="./images/small.png" media="(max-width: 768px)">
+                    <img class="img-fluid" src="./images/katya-mills.png" alt="Mod Studio">
+                </picture>
+            </div>
+            <div class="col-xl-5 offset-lg-1 col-lg-6 col-md-6 col-sm-12 ps-lg-0 ps-4 order-first order-md-last d-flex flex-column">
                 <h3 class="col-12 col-md-6 mb-0 mb-md-5 order-last order-md-first"> Katya Mills</h3>
                 <p class="mb-0 pt-5 ">Art Director</p>
                 <p class="mb-5 pb-5 col-6 col-md-12">Scenography / Styling / Creative Photography / Design</p>
@@ -44,10 +48,7 @@
         </div>
     </section>
 
-    <picture>
-        <source srcset="./images/banner-small.png" media="(max-width: 480px)">
-        <img class="first-screen-img" src="./images/banner.png" alt="Mod Studio">
-    </picture>
+
 
     <!--<section class="designers" id="designers">
         <h2>Designers</h2>
