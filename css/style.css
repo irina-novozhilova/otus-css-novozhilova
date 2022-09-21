@@ -216,5 +216,8 @@ blockquote {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg) translateX(-270px);
+}
+
+@media { max-width: 600px }
 
 }
