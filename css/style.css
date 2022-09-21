@@ -218,6 +218,14 @@ blockquote {
     transform: rotate(180deg) translateX(-270px);
 }
 
-@media { max-width: 600px }
+@media (max-width: 640px ) {
+    .designers h2 {
+        writing-mode: horizontal-tb;
+        transform: rotate(0deg) translateX(240px);
+    }
 
+    .designers img {
+        height: 442px;
+        width: 262px;
+    }
 }
