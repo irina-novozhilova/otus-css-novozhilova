@@ -206,3 +206,15 @@ blockquote {
     right: 0;
     transform: rotate(-90deg) translateX(50%);
 }
+
+.designers h2 {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    /*left: 1003px;*/
+    margin-top: -340px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg) translateX(-270px);
+
+}
