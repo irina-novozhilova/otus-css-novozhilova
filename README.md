@@ -1,2 +1,2 @@
 # otus-css-novozhilova
-education
+educational project
