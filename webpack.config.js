@@ -1,4 +1,7 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const path = require("path");
+
 module.exports = {
     entry: "./src/index.js",
     mode: "development",
@@ -8,16 +11,37 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(js)$/,
-                use: "babel-loader"
+                test: /\.m?js$/, exclude: /(node_modules|bower_components)/,
+                use: ['babel-loader', 'astroturf/loader'],
             },
             {
                 test: /\.(css)$/,
-                use: ["style-loader", "css-loader"]
+                use: [
+                    "style-loader",
+                    "css-loader",
+                    {
+                        loader: "postcss-loader",
+                        options: {
+                            postcssOptions: {
+                                plugins: [
+                                    "autoprefixer",
+                                    "postcss-preset-env",
+                                    "postcss-deadcss",
+                                    "at-rule-packer",
+                                    "postcss-import",
+                                    "cssnano"
+                                ],
+                            },
+                        },
+                    },
+                ]
             },
             {
-                test: /\.(jpg|jpeg|png)$/i,
-                use: "file-loader",
+                test: /\.(png|jpg|gif|svg)$/,
+                loader: 'file-loader',
+                options: {
+                    name: '[name].[ext]',
+                }
             },
             {
                 test: /\.(svg)$/i,
@@ -29,7 +53,16 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: "index.html",
             template: "./src/index.html"
-        })
+        }),
+        new CopyWebpackPlugin({
+            patterns: [
+                {
+                    from: path.resolve(__dirname, './src/images/'),
+                    to: path.resolve(__dirname, './dist/images'),
+                },
+            ]
+        }),
+
     ],
     devServer: {
         compress: false,
