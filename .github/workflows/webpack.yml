@@ -23,7 +23,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: Build
-      uses: irina-novozhilova/otus-css-novozhilova@main
+      uses: JamesIves/github-pages-deploy-action@master
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: gh-pages
