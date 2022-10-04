@@ -1,28 +1,19 @@
-name: NodeJS with Webpack
-
+name: Deploy to GitHub Pages
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
+    push:
+        branches:
+            - master
 jobs:
-  build:
-    runs-on: ubuntu-latest
+    build-and-deploy:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Checkout
+          uses: actions/checkout@master
 
-    strategy:
-      matrix:
-        node-version: [18.x]
-    
-    steps:
-    - uses: actions/checkout@v3
-
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-
-    - name: Build
-      run: |
-        npm install
-        npm run build
+        - name: Build and Deploy
+          uses: irina-novozhilova/otus-css-novozhilova@master
+          env:
+            ACCESS_TOKEN: $
+            BRANCH: gh-pages
+            FOLDER: dist
+            BUILD_SCRIPT: npm install && npm run build
