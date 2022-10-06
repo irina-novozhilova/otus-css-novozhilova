@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_mobile_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/mobile.css */ \"./src/css/mobile.css\");\n/* harmony import */ var _css_fonts_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./css/fonts.css */ \"./src/css/fonts.css\");\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./css/style.css */ \"./src/css/style.css\");\n\n\n\n\n//# sourceURL=webpack://otus-css-novozhilova/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/style.css */ \"./src/css/style.css\");\n/* harmony import */ var _css_fonts_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./css/fonts.css */ \"./src/css/fonts.css\");\n/* harmony import */ var _css_mobile_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./css/mobile.css */ \"./src/css/mobile.css\");\n\n\n\n\n//# sourceURL=webpack://otus-css-novozhilova/./src/index.js?");
 
 /***/ }),
 
